@@ -7,7 +7,7 @@ import {
 export const getDataFromServer = createAsyncThunk(`weatherDescription/getDataFromServer`, async ({
                                                                                                    lat, lon
                                                                                                  }, { dispatch }) => {
-  const apiUrl = `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=`;
+  const apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=`;
   const apiKey = "9995ad9e9c273c0c3114083c55d0ccaf";
   const url = `${apiUrl}${apiKey}`;
 
